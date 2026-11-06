@@ -3,57 +3,58 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="bg-black px-6 py-10 text-white">
-      <div className="mx-auto grid max-w-7xl gap-8 sm:grid-cols-2 md:grid-cols-4">
+    <footer className="bg-black px-6 py-14 text-white">
+      <div className="mx-auto grid max-w-7xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
 
-        {/* Business information */}
+        {/* Business Information */}
         <div>
-          <h2 className="mb-4 text-2xl font-extrabold">
-            Shelly <span className="text-fuchsia-500">Auto</span>
+          <h2 className="mb-5 text-2xl font-extrabold">
+            Shelly <span className="text-pink-600">Auto</span>
           </h2>
 
-          <p className="text-sm leading-6 text-gray-300">
+          <p className="max-w-xs text-sm leading-7 text-gray-300">
             Your trusted partner for quality car spare parts.
             Find reliable automotive parts at affordable prices.
           </p>
         </div>
 
-        {/* Quick links */}
+        {/* Quick Links */}
         <div>
-          <h3 className="mb-4 text-lg font-bold">Quick Links</h3>
+          <h3 className="mb-5 border-b border-green-700 pb-3 text-lg font-bold">
+            Quick Links
+          </h3>
 
-          <ul className="space-y-3 text-sm text-gray-300">
+          <ul className="space-y-4 text-sm text-gray-300">
             <li>
-              <Link to="/" className="hover:text-fuchsia-400">
+              <Link to="/" className="transition hover:text-pink-500">
                 Home
               </Link>
             </li>
-
             <li>
-              <Link to="/products" className="hover:text-fuchsia-400">
+              <Link to="/products" className="transition hover:text-pink-500">
                 All Products
               </Link>
             </li>
-
             <li>
-              <Link to="/cart" className="hover:text-fuchsia-400">
+              <Link to="/cart" className="transition hover:text-pink-500">
                 Shopping Cart
               </Link>
             </li>
-
             <li>
-              <Link to="/contact" className="hover:text-fuchsia-400">
+              <Link to="/contact" className="transition hover:text-pink-500">
                 Contact Us
               </Link>
             </li>
           </ul>
         </div>
 
-        {/* Customer service */}
+        {/* Customer Service */}
         <div>
-          <h3 className="mb-4 text-lg font-bold">Customer Service</h3>
+          <h3 className="mb-5 border-b border-green-700 pb-3 text-lg font-bold">
+            Customer Service
+          </h3>
 
-          <ul className="space-y-3 text-sm text-gray-300">
+          <ul className="space-y-4 text-sm text-gray-300">
             <li>Help and Support</li>
             <li>Delivery Information</li>
             <li>Returns and Refunds</li>
@@ -61,31 +62,47 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Contact information */}
+        {/* Contact Information */}
         <div>
-          <h3 className="mb-4 text-lg font-bold">Contact Us</h3>
+          <h3 className="mb-5 border-b border-green-700 pb-3 text-lg font-bold">
+            Contact Us
+          </h3>
 
-          <p className="mb-3 text-sm text-gray-300">
-            Email: support@shellyauto.example
-          </p>
+          <div className="space-y-4 text-sm text-gray-300">
+            <p>
+              Email: support@shellyauto.example
+            </p>
 
-          <p className="mb-4 text-sm text-gray-300">
-            Phone: Add your business number
-          </p>
+            <p>
+              Phone: Add your business number
+            </p>
+          </div>
 
-          <div className="flex gap-4 text-sm font-semibold">
-            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"
-              className="hover:text-fuchsia-400">
+          <div className="mt-6 flex flex-wrap gap-5 text-sm font-semibold">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-pink-500"
+            >
               Facebook
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"
-              className="hover:text-fuchsia-400">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-pink-500"
+            >
               Instagram
             </a>
 
-            <a href="https://www.tiktok.com/" target="_blank" rel="noreferrer"
-              className="hover:text-fuchsia-400">
+            <a
+              href="https://www.tiktok.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-pink-500"
+            >
               TikTok
             </a>
           </div>
@@ -93,8 +110,9 @@ function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="mt-10 border-t border-gray-700 pt-5 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} Shelly Auto Spare Parts. All rights reserved.
+      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} Shelly Auto Spare Parts.
+        All rights reserved.
       </div>
     </footer>
   );

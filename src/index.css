@@ -9,7 +9,9 @@
   text-rendering: optimizeLegibility;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -21,6 +23,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 button,
@@ -35,6 +38,21 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Keep the header in the normal page flow */
+header {
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Main page content */
+main {
+  position: relative;
+  width: 100%;
+  min-height: 50vh;
+}
+
+/* Print settings */
 @media print {
   header,
   footer,
@@ -56,3 +74,4 @@ a {
     border: none !important;
   }
 }
+
